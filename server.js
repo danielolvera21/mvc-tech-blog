@@ -24,9 +24,9 @@ app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// // turn on routes
-// app.use(express.static(path.join(__dirname, 'public')));
-// app.use(routes);
+// turn on routes
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(routes);
 
 // //setup for express-handlebars
 // app.engine('handlebars', hbs.engine);
